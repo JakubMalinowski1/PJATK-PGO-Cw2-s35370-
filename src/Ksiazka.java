@@ -1,8 +1,8 @@
 public class Ksiazka {
-    private String tytul;
+    public String tytul;
     private String autor;
     private int liczbaStron;
-    private boolean dostepna;
+    public boolean dostepna;
 
     public Ksiazka(String tytul, String autor, int liczbaStron, boolean dostepna) {
         this.tytul = tytul;
