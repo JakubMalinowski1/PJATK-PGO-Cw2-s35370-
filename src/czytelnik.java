@@ -13,23 +13,20 @@ public class czytelnik {
     }
 
     public void wypiszDane() {
-        System.out.println("Czytelnik:" + imie + " " + nazwisko +
-                " Karta nr: " + numerKarty + " " + "Wypożyczone książki:" + liczbaWypożyczeń);
+        System.out.println("\n--- Informacje o Czytelniku ---");
+        System.out.println("Czytelnik: " + imie + " " + nazwisko + " " +
+                "| Karta nr: " + numerKarty + " " + "| Wypożyczone książki: " + liczbaWypożyczeń);
     }
 
     public void zwiększLiczbeWypożyczeń() {
         liczbaWypożyczeń ++;
-        System.out.println("Czytelnik:" + imie + " " + nazwisko + " " + "posiada:" + " " + liczbaWypożyczeń + " " + "wypożyczone książki");
     }
 
     public void zmniejszLiczbeWypożyczeń(){
         if(liczbaWypożyczeń > 0) {
             liczbaWypożyczeń --;
-            System.out.println("Czytelnik:" + imie + " " + nazwisko + " " + "posiada:" + liczbaWypożyczeń + "wypożyczone książki");
         }
-        else {
-            System.out.println("Czytelnik:" + imie + " " + nazwisko + " " + "nie ma żadnych książek wypożyczonych");
-        }
+
     }
 
 }

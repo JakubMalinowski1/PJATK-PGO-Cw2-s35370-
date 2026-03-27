@@ -54,5 +54,22 @@ public class Biblioteka {
         return policz;
     }
 
+    public void wypozycksiazke(String tytul, czytelnik Czytelnik) {
+        Ksiazka x = znajdzKsiazkePoTytule(tytul);
+        if (x != null && x.dostepna) {
+            x.wypozycz();
+            Czytelnik.zwiększLiczbeWypożyczeń();
+        }
+
+    }
+
+    public void zwrocKsiazke (String tytul, czytelnik Czytelnik) {
+        Ksiazka x = znajdzKsiazkePoTytule(tytul);
+        if (x != null && !x.dostepna) {
+            x.zwroc();
+            Czytelnik.zmniejszLiczbeWypożyczeń();
+        }
+    }
+
 
 }
